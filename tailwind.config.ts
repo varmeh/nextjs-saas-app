@@ -17,7 +17,8 @@ const config: Config = {
   },
   plugins: [require('daisyui')],
   daisyui: {
-    themes: ['light', 'dark']
+    themes: ['light', 'sunset'],
+    darkTheme: 'sunset' // using daisyUI sunset as dark theme
   }
 }
 export default config

@@ -27,7 +27,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang='en'>
       <body
-        className={`${inter.variable} ${architects_daughter.variable} font-inter antialiased bg-slate-100 dark:bg-gray-900 text-gray-900 dark:text-gray-200 tracking-tight`}>
+        className={`${inter.variable} ${architects_daughter.variable} font-inter antialiased bg-base text-base-content tracking-tight`}>
         <Theme>
           <div className='flex flex-col min-h-screen overflow-hidden'>
             {/* <Header /> */}

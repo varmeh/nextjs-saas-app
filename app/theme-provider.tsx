@@ -9,7 +9,7 @@ export default function Theme({ children }: { children: React.ReactNode }) {
       attribute='data-theme'
       storageKey='theme'
       themes={['light', 'dark']}
-      defaultTheme='light'
+      defaultTheme='dark'
       disableTransitionOnChange>
       {children}
     </ThemeProvider>
