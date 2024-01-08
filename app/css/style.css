@@ -20,3 +20,7 @@
 [x-cloak=''] {
   display: none;
 }
+
+.btn {
+  @apply rounded-none;
+}
