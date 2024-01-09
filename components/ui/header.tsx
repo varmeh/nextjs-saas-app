@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import MobileMenu from './mobile-menu'
+import ToggleTheme from '@/components/theme-toggle'
 
 export default function Header() {
   return (
@@ -53,8 +54,11 @@ export default function Header() {
 
             {/* Desktop sign in links */}
             <ul className='flex grow justify-end flex-wrap items-center'>
+              <li className='flex items-center'>
+                <ToggleTheme />
+              </li>
               <li>
-                <Link href='/signin' className='btn btn-sm btn-ghost hover:bg-neutral hover:text-neutral-content'>
+                <Link href='/signin' className='btn btn-sm btn-ghost hover:bg-neutral hover:text-neutral-content ml-3'>
                   Sign in
                 </Link>
               </li>
