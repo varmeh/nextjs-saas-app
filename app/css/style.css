@@ -1,10 +1,9 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
 /* Additional styles */
 @import 'additional-styles/theme.css';
-
-@import 'tailwindcss/utilities';
 
 /* Additional Tailwind directives: https://tailwindcss.com/docs/functions-and-directives/#responsive */
 @layer utilities {
@@ -16,4 +15,9 @@
 /* See Alpine.js: https://github.com/alpinejs/alpine#x-cloak */
 [x-cloak=''] {
   display: none;
+}
+
+/* Buttons */
+.btn {
+  @apply rounded-none;
 }

@@ -7,11 +7,6 @@
   @apply ring-0;
 }
 
-/* Buttons */
-.btn {
-  @apply rounded-none;
-}
-
 /* Hamburger button */
 .hamburger svg > *:nth-child(1),
 .hamburger svg > *:nth-child(2),
