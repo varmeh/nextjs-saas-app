@@ -55,7 +55,7 @@ export default function Header() {
             {/* Desktop sign in links */}
             <ul className='flex grow justify-end flex-wrap items-center'>
               <li className='flex items-center'>
-                <ToggleTheme />
+                <ToggleTheme size={5} />
               </li>
               <li>
                 <Link href='/signin' className='btn btn-sm btn-ghost hover:bg-neutral hover:text-neutral-content ml-3'>

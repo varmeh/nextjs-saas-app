@@ -2,6 +2,7 @@
 
 import { useState, useRef, useEffect } from 'react'
 import Link from 'next/link'
+import ToggleTheme from '@/components/theme-toggle'
 
 export default function MobileMenu() {
   const [mobileNavOpen, setMobileNavOpen] = useState<boolean>(false)
@@ -32,11 +33,14 @@ export default function MobileMenu() {
   })
 
   return (
-    <div className='md:hidden'>
+    <div className='md:hidden flex items-center '>
+      {/* Theme Toggle */}
+      <ToggleTheme size={6} />
+
       {/* Hamburger button */}
       <button
         ref={trigger}
-        className={`hamburger ${mobileNavOpen && 'active'}`}
+        className={`hamburger ${mobileNavOpen && 'active'} ml-3`}
         aria-controls='mobile-nav'
         aria-expanded={mobileNavOpen}
         onClick={() => setMobileNavOpen(!mobileNavOpen)}>
