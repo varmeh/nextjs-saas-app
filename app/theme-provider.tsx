@@ -8,8 +8,8 @@ export default function Theme({ children }: { children: React.ReactNode }) {
     <ThemeProvider
       attribute='data-theme'
       storageKey='theme'
-      themes={['light', 'dark']}
-      defaultTheme='dark'
+      themes={['winter', 'dark']}
+      defaultTheme='winter'
       disableTransitionOnChange>
       {children}
     </ThemeProvider>
