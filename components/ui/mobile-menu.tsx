@@ -2,7 +2,7 @@
 
 import { useState, useRef, useEffect } from 'react'
 import Link from 'next/link'
-import ToggleTheme from '@/components/theme-toggle'
+import ThemeToggle from '@/components/theme-toggle'
 
 export default function MobileMenu() {
   const [mobileNavOpen, setMobileNavOpen] = useState<boolean>(false)
@@ -35,7 +35,7 @@ export default function MobileMenu() {
   return (
     <div className='md:hidden flex items-center '>
       {/* Theme Toggle */}
-      <ToggleTheme size={6} />
+      <ThemeToggle />
 
       {/* Hamburger button */}
       <button
