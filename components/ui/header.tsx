@@ -2,6 +2,14 @@ import Link from 'next/link'
 import MobileMenu from './mobile-menu'
 import ThemeToggle from '@/components/theme-toggle'
 
+const HeaderLink = ({ href, children }: { href: string; children: React.ReactNode }) => (
+  <Link
+    href={href}
+    className='text-base-content hover:text-primary px-4 py-2 flex items-center transition duration-150 ease-in-out'>
+    {children}
+  </Link>
+)
+
 export default function Header() {
   return (
     <header className='absolute w-full z-30'>
@@ -22,32 +30,16 @@ export default function Header() {
             {/* Desktop menu links */}
             <ul className='flex grow justify-end flex-wrap items-center'>
               <li>
-                <Link
-                  href='/features'
-                  className='text-base-content hover:text-primary px-4 py-2 flex items-center transition duration-150 ease-in-out'>
-                  Features
-                </Link>
+                <HeaderLink href='/features'>Features</HeaderLink>
               </li>
               <li>
-                <Link
-                  href='/pricing'
-                  className='text-base-content hover:text-primary px-4 py-2 flex items-center transition duration-150 ease-in-out'>
-                  Pricing
-                </Link>
+                <HeaderLink href='/pricing'>Pricing</HeaderLink>
               </li>
               <li>
-                <Link
-                  href='/blog'
-                  className='text-base-content hover:text-primary px-4 py-2 flex items-center transition duration-150 ease-in-out'>
-                  Blog
-                </Link>
+                <HeaderLink href='/blog'>Blog</HeaderLink>
               </li>
               <li>
-                <Link
-                  href='/about'
-                  className='text-base-content hover:text-primary px-4 py-2 flex items-center transition duration-150 ease-in-out'>
-                  About us
-                </Link>
+                <HeaderLink href='/about'>About Us</HeaderLink>
               </li>
             </ul>
 
