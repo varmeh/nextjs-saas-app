@@ -4,6 +4,7 @@ import { Inter, Architects_Daughter } from 'next/font/google'
 
 import Theme from './theme-provider'
 import Header from '@/components/ui/header'
+import Footer from '@/components/ui/footer'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -31,7 +32,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Theme>
           <div className='flex flex-col min-h-screen overflow-hidden'>
             <Header />
-            {children}
+            <main className='flex-grow'>{children}</main>
+            <Footer />
           </div>
         </Theme>
       </body>
