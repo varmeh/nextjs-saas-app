@@ -57,13 +57,13 @@ export default function Header() {
                 <ThemeToggle />
               </li>
               <li>
-                <Link href='/signin' className='btn btn-sm btn-ghost hover:bg-neutral hover:text-neutral-content ml-3'>
-                  Sign in
+                <Link href='/signin' className='btn btn-sm btn-primary btn-outline ml-3'>
+                  Sign In
                 </Link>
               </li>
               <li>
                 <Link href='/signup' className='btn btn-sm btn-primary ml-3'>
-                  Sign up
+                  Sign Up
                 </Link>
               </li>
             </ul>

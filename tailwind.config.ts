@@ -17,7 +17,7 @@ const config: Config = {
   },
   plugins: [require('daisyui')],
   daisyui: {
-    themes: ['winter', 'sunset'],
+    themes: [{ winter: { ...require('daisyui/src/theming/themes')['winter'], 'primary-content': 'white' } }, 'sunset'],
     darkTheme: 'sunset' // using daisyUI sunset as dark theme
   }
 }

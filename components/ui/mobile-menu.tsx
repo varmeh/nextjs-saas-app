@@ -97,7 +97,10 @@ export default function MobileMenu() {
             </Link>
           </li>
           <li>
-            <Link href='/signin' className='btn btn-neutral flex mt-4' onClick={() => setMobileNavOpen(false)}>
+            <Link
+              href='/signin'
+              className='btn btn-primary btn-outline flex mt-4'
+              onClick={() => setMobileNavOpen(false)}>
               Sign in
             </Link>
           </li>
