@@ -33,9 +33,9 @@ export default function NotFound() {
               <h1 className='h1 mb-4' data-aos='fade-up' data-aos-delay='200'>
                 Uh oh. That page doesn’t exist.
               </h1>
-              <p className='text-md opacity-90' data-aos='fade-up' data-aos-delay='400'>
+              <p className='mx-4 text-base-content' data-aos='fade-up' data-aos-delay='400'>
                 Head to our{' '}
-                <Link href='/' className='text-primary/80 hover:text-primary transition duration-150 ease-in-out'>
+                <Link href='/' className='text-primary'>
                   homepage
                 </Link>{' '}
                 that does exist, or try double-checking the URL.

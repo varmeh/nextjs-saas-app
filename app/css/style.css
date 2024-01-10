@@ -3,6 +3,7 @@
 @import 'tailwindcss/utilities';
 
 /* Additional styles */
+@import 'additional-styles/utility-patterns.css';
 @import 'additional-styles/theme.css';
 
 /* Additional Tailwind directives: https://tailwindcss.com/docs/functions-and-directives/#responsive */
