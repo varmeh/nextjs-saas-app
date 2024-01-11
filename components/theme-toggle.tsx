@@ -14,7 +14,7 @@ export default function ThemeToggle() {
 
   const handleThemeChange = (event: { target: { checked: any } }) => {
     // Toggle the theme
-    setTheme(isDarkMode ? 'winter' : 'dark')
+    setTheme(isDarkMode ? 'light' : 'dark')
   }
 
   return (
