@@ -11,8 +11,9 @@ const FooterLink = ({ href, children }: { href: string; children: React.ReactNod
 
 export default function Footer() {
   return (
-    <div>
-      <footer className='max-w-6xl mx-auto px-4 sm:px-6 my-8 sm:my-12 text-base-content'>
+    <footer>
+      {/* Setting aside the max lenght of footer space to max-w-6xl */}
+      <div className='max-w-6xl mx-auto px-4 sm:px-6 my-8 sm:my-12 text-base-content'>
         {/* Main content of the footer */}
         <div className='footer'>
           <aside>
@@ -75,7 +76,7 @@ export default function Footer() {
             </a>
           </nav>
         </div>
-      </footer>
-    </div>
+      </div>
+    </footer>
   )
 }
