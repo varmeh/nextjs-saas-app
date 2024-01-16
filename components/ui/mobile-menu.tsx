@@ -2,7 +2,7 @@
 
 import { useState, useRef, useEffect } from 'react'
 import Link from 'next/link'
-import ThemeToggle from '@/components/theme-toggle'
+import ThemeToggle from '@/components/theme/theme-toggle'
 
 export default function MobileMenu() {
   const [mobileNavOpen, setMobileNavOpen] = useState<boolean>(false)

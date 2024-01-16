@@ -2,7 +2,7 @@ import './css/style.css'
 
 import { Inter, Architects_Daughter } from 'next/font/google'
 
-import Theme from './theme-provider'
+import Theme from '../components/theme/theme-provider'
 import Header from '@/components/ui/header'
 import Footer from '@/components/ui/footer'
 

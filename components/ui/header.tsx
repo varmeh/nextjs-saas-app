@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import MobileMenu from './mobile-menu'
-import ThemeToggle from '@/components/theme-toggle'
+import ThemeToggle from '@/components/theme/theme-toggle'
 
 const HeaderLink = ({ href, children }: { href: string; children: React.ReactNode }) => (
   <Link
