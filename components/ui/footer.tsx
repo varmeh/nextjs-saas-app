@@ -13,7 +13,7 @@ export default function Footer() {
   return (
     <footer>
       {/* Setting aside the max lenght of footer space to max-w-6xl */}
-      <div className='max-w-6xl mx-auto px-4 sm:px-6 my-8 sm:my-12 text-base-content'>
+      <div className='max-w-6xl mx-auto px-4 sm:px-6 my-8 sm:my-12'>
         {/* Main content of the footer */}
         <div className='footer'>
           <aside>
