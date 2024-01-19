@@ -9,12 +9,16 @@ import 'aos/dist/aos.css'
 
 export default function DefaultLayout({ children }: { children: React.ReactNode }) {
   useEffect(() => {
-    AOS.init({
-      once: true,
-      disable: 'phone',
-      duration: 600,
-      easing: 'ease-out-sine'
-    })
+    /* AOS needs the DOM elements to be fully rendered.
+    setTimeout used as a workaround to fix AOS animation issues on loading  */
+    setTimeout(() => {
+      AOS.init({
+        once: true,
+        disable: 'phone',
+        duration: 600,
+        easing: 'ease-out-sine'
+      })
+    }, 5)
   })
 
   return (
