@@ -5,7 +5,7 @@ import { useEffect } from 'react'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
-import PageIllustration from '@/components/page-illustration'
+// import PageIllustration from '@/components/page-illustration'
 
 export default function DefaultLayout({ children }: { children: React.ReactNode }) {
   useEffect(() => {
@@ -19,11 +19,9 @@ export default function DefaultLayout({ children }: { children: React.ReactNode 
 
   return (
     <>
-      <main className='grow'>
-        {/* <PageIllustration /> */}
+      {/* <PageIllustration /> */}
 
-        {children}
-      </main>
+      {children}
     </>
   )
 }
