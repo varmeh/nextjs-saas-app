@@ -6,7 +6,7 @@ export default function Hero() {
     /* Hero Section */
     <section className='relative'>
       <div className='hero min-h-screen'>
-        <div className='flex flex-col md:flex-row max-w-6xl mx-auto px-4 sm:px-6' aria-hidden='true' data-aos='fade-up'>
+        <div className='flex flex-col md:flex-row' aria-hidden='true' data-aos='fade-up'>
           <div className='md:w-3/5 self-center'>
             <h1 className='text-4xl md:text-5xl font-bold mb-4' data-aos='fade-up'>
               Your Product TagLine
