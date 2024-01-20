@@ -1,22 +1,46 @@
+'use client'
+
 import Link from 'next/link'
 import Image from 'next/image'
+
+import { useEffect } from 'react'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
 import NotFoundImage from '@/public/images/404.jpg'
 import PageIllustration from '@/components/page-illustration'
 
+/* Why AOS added separately for Not-Found
+ * AOS gives error with RootLayout
+ * So, AOSInitializer added to DefaultLayout.
+ * As Not-found is next to RootLayout, AOS does not work with it.
+ * So AOS added explicitly. */
+
 export default function NotFound() {
+  useEffect(() => {
+    /* AOS needs the DOM elements to be fully rendered.
+    setTimeout used as a workaround to fix AOS animation issues on loading  */
+    setTimeout(() => {
+      AOS.init({
+        once: true,
+        disable: 'phone',
+        duration: 600,
+        easing: 'ease-out-sine'
+      })
+    }, 5)
+  })
   return (
     <>
       {/*  Page illustration */}
       {/* <div className='relative max-w-6xl mx-auto h-0 pointer-events-none' aria-hidden='true'>
         <PageIllustration />
       </div> */}
-
-      <section className='relative'>
-        <div className='max-w-6xl mx-auto px-4 sm:px-6'>
+      <section className='relative min-h-svh'>
+        <div className='max-w-6xl mx-auto px-4 sm:px-6' aria-hidden='true'>
           <div className='pt-32 pb-12 md:pt-40 md:pb-20'>
             <div className='max-w-3xl mx-auto text-center'>
               {/* Top image */}
-              <div className='relative inline-flex flex-col mb-6' data-aos='fade-up'>
+              <div className='relative inline-flex flex-col mb-6' data-aos='fade-up' data-aos-delay='200'>
                 <Image className='rounded-full' src={NotFoundImage} width={196} height={196} alt='404' />
                 <svg
                   className='w-20 h-20 fill-current text-primary absolute top-0 right-0 -mr-6'
@@ -30,10 +54,10 @@ export default function NotFound() {
                 </svg>
               </div>
               {/* 404 content */}
-              <h1 className='h1 mb-4' data-aos='fade-up' data-aos-delay='200'>
+              <h1 className='h1 mb-4' data-aos='fade-up' data-aos-delay='400'>
                 Uh oh. That page doesn’t exist.
               </h1>
-              <p className='mx-4 text-base-content' data-aos='fade-up' data-aos-delay='400'>
+              <p className='mx-4 text-base-content' data-aos='fade-up' data-aos-delay='600'>
                 Head to our{' '}
                 <Link href='/' className='text-primary'>
                   homepage
