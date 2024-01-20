@@ -4,7 +4,7 @@ import HeroImage from '@/public/images/404.jpg'
 export default function Hero() {
   return (
     /* Hero Section */
-    <section className='relative'>
+    <section title='hero' className='relative'>
       <div className='hero min-h-screen'>
         <div className='flex flex-col md:flex-row' aria-hidden='true' data-aos='fade-up'>
           <div className='md:w-3/5 self-center'>
