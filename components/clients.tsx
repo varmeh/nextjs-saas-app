@@ -9,7 +9,6 @@ import clientAmazon from '@/public/images/clients/amazon.svg'
 import clientQuora from '@/public/images/clients/quora.svg'
 import clientTinder from '@/public/images/clients/tinder.svg'
 import clientHubspot from '@/public/images/clients/hubspot.svg'
-import clientSpark from '@/public/images/clients/spark.svg'
 import clientCanon from '@/public/images/clients/canon.svg'
 import clientCadbury from '@/public/images/clients/cadbury.svg'
 
@@ -46,31 +45,28 @@ export default function Clients() {
           <div className='swiper-wrapper !ease-linear select-none items-center'>
             {/* Carousel items */}
             <div className='swiper-slide !w-auto'>
-              <Image src={clientFacbook} alt='Client 01' />
+              <Image src={clientFacbook} alt='Client Facebook' width={110} height={21} />
             </div>
             <div className='swiper-slide !w-auto'>
-              <Image src={clientAirbnb} alt='Client 02' width={70} height={25} />
+              <Image src={clientTinder} alt='Client Tinder' width={70} height={25} />
             </div>
             <div className='swiper-slide !w-auto'>
-              <Image className='mt-1' src={clientAmazon} alt='Client 03' width={107} height={33} />
+              <Image className='mt-1' src={clientAirbnb} alt='Client Airbnb' width={107} height={33} />
             </div>
             <div className='swiper-slide !w-auto'>
-              <Image src={clientQuora} alt='Client 04' width={85} height={36} />
+              <Image src={clientCadbury} alt='Client Cadbury' width={85} height={36} />
             </div>
             <div className='swiper-slide !w-auto'>
-              <Image src={clientTinder} alt='Client 05' width={86} height={18} />
+              <Image src={clientCanon} alt='Client Canon' width={86} height={18} />
             </div>
             <div className='swiper-slide !w-auto'>
-              <Image src={clientHubspot} alt='Client 06' width={78} height={34} />
+              <Image src={clientQuora} alt='Client Quora' width={83} height={23} />
             </div>
             <div className='swiper-slide !w-auto'>
-              <Image src={clientSpark} alt='Client 07' width={83} height={23} />
+              <Image src={clientHubspot} alt='Client Hubspot' width={98} height={26} />
             </div>
             <div className='swiper-slide !w-auto'>
-              <Image src={clientCanon} alt='Client 08' width={98} height={26} />
-            </div>
-            <div className='swiper-slide !w-auto'>
-              <Image className='mt-2' src={clientCadbury} alt='Client 09' width={92} height={28} />
+              <Image className='mt-2' src={clientAmazon} alt='Client Amazon' width={92} height={28} />
             </div>
           </div>
         </div>
